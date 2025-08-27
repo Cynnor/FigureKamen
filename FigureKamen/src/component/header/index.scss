@@ -3,8 +3,9 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);  // Thêm dòng này
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);  // Thêm dòng này    
     border-radius: 0px 0px 32px 32px;         // Bo viền của Header
+    z-index: 30 ;
     
     .header__logo {
         img {
@@ -18,13 +19,32 @@
             list-style: none;
             gap: 30px;
             li {
-                link {
+                a {
+                    color: #000;
+                    font-size: 18px;
                     text-decoration: none;
                     &:hover {
-                        color: yellow;
+                        color: rgb(185, 181, 250);
                     }
                 }
             }
         }
-    }    
+    }   
+    .header__actions {
+        display: flex;
+        gap: 15px;
+        a {
+            color: #000;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 1px solid #000;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+            &:hover {
+                color: rgb(185, 181, 250);
+                background-color: #000;
+            }
+        }
+    } 
 }
