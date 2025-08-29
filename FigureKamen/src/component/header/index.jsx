@@ -5,27 +5,29 @@ function Header() {
   return (
     <header className="header">
       <div className="header__logo">
-        <img src="logoWeb.png" alt="Logo" className="logoWeb" />
+        <Link to="/">
+          <img src="logoWeb.png" alt="Logo" className="logoWeb" />
+        </Link>
       </div>
-      <div className="header__nav">
+      <nav className="header__nav">
         <ul>
           <li>
-            <Link to="/">Trang chủ</Link>
+            <Link to="/product">Sản phẩm</Link>
           </li>
           <li>
-            <Link to="/product">Mô hình</Link>
+            <Link to="/collections">Bộ sưu tập</Link>
+          </li>
+          <li>
+            <Link to="/promotion">Khuyến mãi</Link>
           </li>
           <li>
             <Link to="/about">Giới thiệu</Link>
           </li>
           <li>
-            <Link to="/policy">Chính sách</Link>
-          </li>
-          <li>
-            <Link to="/checkout">Thanh toán</Link>
+            <Link to="/contact">Liên hệ</Link>
           </li>
         </ul>
-      </div>
+      </nav>
       <div className="header__actions">
         <Link to="/login">Đăng nhập</Link>
         <Link to="/register">Đăng ký</Link>

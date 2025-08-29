@@ -1,12 +1,7 @@
-import Header from "../../component/header";
+import "./index.scss";
 
 function ProductPage() {
-  return (
-    <div>
-      <Header />
-      ProductPage
-    </div>
-  );
+  return <div>ProductPage</div>;
 }
 
 export default ProductPage;
