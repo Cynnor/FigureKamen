@@ -1,53 +1,26 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Header from "./component/header";
-import ProductPage from "./page/productPage";
 import "./main.scss";
+import Layout from "./component/Layout";
+import ProductPage from "./page/productPage";
 import HomePage from "./page/homePage";
 import AboutPage from "./page/aboutPage";
-import PolicyPage from "./page/policyPage/index";
-import CheckoutPage from "./page/checkOutPage";
+import CollectionsPage from "./page/collectionsPage";
+import ContactPage from "./page/contactPage";
+import PromotionPage from "./page/promotionPage";
 
 function FigureKamen() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: (
-        <div>
-          <HomePage />
-        </div>
-      ),
-    },
-    {
-      path: "/product",
-      element: (
-        <div>
-          <ProductPage />
-        </div>
-      ),
-    },
-    {
-      path: "/about",
-      element: (
-        <div>
-          <AboutPage />
-        </div>
-      ),
-    },
-    {
-      path: "/policy",
-      element: (
-        <div>
-          <PolicyPage />
-        </div>
-      ),
-    },
-    {
-      path: "/checkout",
-      element: (
-        <div>
-          <CheckoutPage />
-        </div>
-      ),
+      element: <Layout />,
+      children: [
+        { path: "/", element: <HomePage /> },
+        { path: "/about", element: <AboutPage /> },
+        { path: "/product", element: <ProductPage /> },
+        { path: "/collections", element: <CollectionsPage /> },
+        { path: "/contact", element: <ContactPage /> },
+        { path: "/promotion", element: <PromotionPage /> },
+      ],
     },
   ]);
 

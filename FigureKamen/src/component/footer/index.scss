@@ -1,0 +1,66 @@
+.footer {
+  background: linear-gradient(90deg,#c3cfe2  0%,#f5f7fa  100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    &__logo {
+      width: 40dvh;
+      a{
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    &__social {
+      p {
+        font-size: 18px;
+        margin: 0;
+        color: #555;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+        li {
+          margin: 0 10px;
+          a {
+            font-size: 30px;
+            color: #000;
+            &:hover {
+              color: #1890ff;
+            }
+          }
+        }
+      }
+    }
+    &__contact {
+      p {
+        font-size: 18px;
+        margin: 0;
+        color: #555;
+      }
+      ul {
+        list-style: none;
+        li {
+          margin: 5px 0;
+          a {
+            
+        text-decoration: none ;
+            color: #000;
+            &:hover {
+              color: #1890ff;
+            }
+          }
+        }
+      }
+    }
+    &__info {
+      text-align: center;
+      p {
+        margin: 2px 0;
+        font-size: 14px;
+        color: #555;
+      }
+    }
+}
