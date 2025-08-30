@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    padding: 20px;
+    .table{
+        width: 85%;
+        padding: 20px;
+        margin: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+    }
+}

@@ -1,9 +1,11 @@
-.footer {
-  background: linear-gradient(90deg,#c3cfe2  0%,#f5f7fa  100%);
+footer{
+  .footer__top {
+    background: linear-gradient(90deg,#c3cfe2  0%,#f5f7fa  100%);
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 10px;
+    
     &__logo {
       width: 40dvh;
       a{
@@ -63,4 +65,18 @@
         color: #555;
       }
     }
+}
+  .footer__bottom {
+    background: linear-gradient(90deg,#c3cfe2  0%,#f5f7fa  100%);
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-self: start;
+    p {
+      margin: 2px 0;
+      font-size: 14px;
+      color: #555;
+    }
+  }
 }
