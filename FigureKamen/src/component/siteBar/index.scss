@@ -1,0 +1,32 @@
+    .site-bar{
+    background: linear-gradient(to bottom, #f5f7fa 0%, #c3cfe2 100%);
+    display: block;
+    width: 15%;
+    height: 100vh;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    &-list{
+        list-style: none;
+        padding: 20px;
+        align-self: start;
+        justify-self: center;
+        &-item{
+            margin: 40px 0;
+            a{
+                border: 1px solid #000; // Thêm viền cho mỗi dòng
+                border-radius: 6px;         
+                padding: 10px 18px;
+                transition: border-color 0.3s;
+                font-size: 18px;
+                text-decoration: none;
+                color: inherit;
+                &:hover {
+                    color: rgb(185, 181, 250);
+                    background-color: #000;
+                }
+            }
+        }
+    }
+}
