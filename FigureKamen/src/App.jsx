@@ -1,12 +1,14 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./main.scss";
 import Layout from "./component/Layout";
-import ProductPage from "./page/productPage";
 import HomePage from "./page/homePage";
 import AboutPage from "./page/aboutPage";
 import CollectionsPage from "./page/collectionsPage";
 import ContactPage from "./page/contactPage";
 import PromotionPage from "./page/promotionPage";
+import ProductManagement from "./page/productManagement";
+import OrderManagement from "./page/orderManagement";
+import UserManagement from "./page/userManagement";
 
 function FigureKamen() {
   const router = createBrowserRouter([
@@ -16,10 +18,13 @@ function FigureKamen() {
       children: [
         { path: "/", element: <HomePage /> },
         { path: "/about", element: <AboutPage /> },
-        { path: "/product", element: <ProductPage /> },
         { path: "/collections", element: <CollectionsPage /> },
         { path: "/contact", element: <ContactPage /> },
         { path: "/promotion", element: <PromotionPage /> },
+
+        { path: "/productManagement", element: <ProductManagement /> },
+        { path: "/orderManagement", element: <OrderManagement /> },
+        { path: "/userManagement", element: <UserManagement /> },
       ],
     },
   ]);

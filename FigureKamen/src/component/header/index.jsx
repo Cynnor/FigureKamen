@@ -12,9 +12,6 @@ function Header() {
       <nav className="header__nav">
         <ul>
           <li>
-            <Link to="/product">Sản phẩm</Link>
-          </li>
-          <li>
             <Link to="/collections">Bộ sưu tập</Link>
           </li>
           <li>
