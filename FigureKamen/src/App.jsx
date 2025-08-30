@@ -21,7 +21,6 @@ function FigureKamen() {
         { path: "/collections", element: <CollectionsPage /> },
         { path: "/contact", element: <ContactPage /> },
         { path: "/promotion", element: <PromotionPage /> },
-
         { path: "/productManagement", element: <ProductManagement /> },
         { path: "/orderManagement", element: <OrderManagement /> },
         { path: "/userManagement", element: <UserManagement /> },
