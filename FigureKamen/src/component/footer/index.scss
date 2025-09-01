@@ -5,7 +5,9 @@ footer{
     align-items: center;
     justify-content: space-around;
     padding: 10px;
-    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 16px 16px 0 0;
+
     &__logo {
       width: 40dvh;
       a{
@@ -18,14 +20,15 @@ footer{
     &__social {
       p {
         font-size: 18px;
-        margin: 0;
         color: #555;
       }
       ul {
         display: flex;
+        justify-content: space-around;
         list-style: none;
+        margin-right: 16px;
         li {
-          margin: 0 10px;
+          margin: 15px;
           a {
             font-size: 30px;
             color: #000;

@@ -1,7 +1,12 @@
 import "./index.scss";
+import SiteBar from "./../../component/siteBar/index";
 
 function OrderManagement() {
-  return <div>OrderManagement</div>;
+  return (
+    <div className="container">
+      <SiteBar />
+    </div>
+  );
 }
 
 export default OrderManagement;
