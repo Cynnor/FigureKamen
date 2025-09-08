@@ -4,30 +4,32 @@ import "./index.scss";
 function Header() {
   return (
     <header className="header">
-      <div className="header__logo">
-        <Link to="/">
-          <img src="logoWeb.png" alt="Logo" className="logoWeb" />
-        </Link>
-      </div>
-      <nav className="header__nav">
-        <ul>
-          <li>
-            <Link to="/collections">Bộ sưu tập</Link>
-          </li>
-          <li>
-            <Link to="/promotion">Khuyến mãi</Link>
-          </li>
-          <li>
-            <Link to="/about">Giới thiệu</Link>
-          </li>
-          <li>
-            <Link to="/contact">Liên hệ</Link>
-          </li>
-        </ul>
-      </nav>
-      <div className="header__actions">
-        <Link to="/login">Đăng nhập</Link>
-        <Link to="/register">Đăng ký</Link>
+      <div className="container header__inner">
+        <div className="header__logo">
+          <Link to="/">
+            <img src="logoWeb.png" alt="Logo" className="logoWeb" />
+          </Link>
+        </div>
+        <nav className="header__nav">
+          <ul>
+            <li>
+              <Link to="/collections">Bộ sưu tập</Link>
+            </li>
+            <li>
+              <Link to="/promotion">Khuyến mãi</Link>
+            </li>
+            <li>
+              <Link to="/about">Giới thiệu</Link>
+            </li>
+            <li>
+              <Link to="/contact">Liên hệ</Link>
+            </li>
+          </ul>
+        </nav>
+        <div className="header__actions">
+          <Link to="/login">Đăng nhập</Link>
+          <Link to="/register">Đăng ký</Link>
+        </div>
       </div>
     </header>
   );

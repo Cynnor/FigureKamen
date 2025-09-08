@@ -9,7 +9,7 @@ import {
 function Footer() {
   return (
     <footer className="footer">
-      <div className="footer__top">
+      <div className="container footer__top">
         <div className="footer__top__logo">
           <Link to="/">
             <img src="logoWeb.png" alt="Logo" className="logoWeb" />
@@ -23,7 +23,7 @@ function Footer() {
                 href="https://www.facebook.com/cong.huy.213035"
                 className="footer__social-link"
               >
-                <FacebookFilled />
+                <FacebookFilled className="fb" />
               </a>
             </li>
             <li>
@@ -31,7 +31,7 @@ function Footer() {
                 href="https://www.instagram.com/cynnor.url/"
                 className="footer__social-link"
               >
-                <InstagramFilled />
+                <InstagramFilled className="insta" />
               </a>
             </li>
             <li>
@@ -39,7 +39,7 @@ function Footer() {
                 href="https://www.youtube.com/"
                 className="footer__social-link"
               >
-                <YoutubeFilled />
+                <YoutubeFilled className="ytb" />
               </a>
             </li>
           </ul>
@@ -48,17 +48,23 @@ function Footer() {
           <p>Liên hệ</p>
           <ul>
             <li>
-              <a href="https://mail.google.com/mail/u/0/#inbox">
-                nguyenconghuy.1821@gmail.com
-              </a>
+              <p>
+                Email:
+                <a href="mailto:nguyenconghuy.1821@gmail.com">
+                  Nguyenconghuy.1821@gmail.com
+                </a>
+              </p>
             </li>
             <li>
-              <a href="tel:+335165044">+335165044</a>
+              <p>
+                Số điện thoại:<a href="tel:+335165044"> +335165044</a>
+              </p>
             </li>
           </ul>
         </div>
       </div>
-      <div className="footer__bottom">
+      <div className="footer__divider" />
+      <div className="container footer__bottom">
         <div className="footer__bottom__info">
           <p>© 2025 All rights reserved.</p>
           <p>Designed by Cynnor</p>
