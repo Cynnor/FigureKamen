@@ -11,6 +11,7 @@ import OrderManagement from "./page/orderManagement";
 import UserManagement from "./page/userManagement";
 import Login from "./page/login";
 import Register from "./page/register";
+import ProductDetailPage from "./page/productDetailPage";
 
 function FigureKamen() {
   const router = createBrowserRouter([
@@ -26,6 +27,7 @@ function FigureKamen() {
         { path: "/productManagement", element: <ProductManagement /> },
         { path: "/orderManagement", element: <OrderManagement /> },
         { path: "/userManagement", element: <UserManagement /> },
+        { path: "/product/:id", element: <ProductDetailPage /> },
       ],
     },
     {
