@@ -1,5 +1,5 @@
 import "./index.scss";
-import SiteBar from "./../../component/siteBar/index";
+import SiteBar from "../../components/siteBar/index";
 
 function OrderManagement() {
   return (
