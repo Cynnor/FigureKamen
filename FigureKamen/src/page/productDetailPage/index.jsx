@@ -1,7 +1,9 @@
+
 import { useParams, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { getProductById } from "../../data/products";
 import { useCart } from "../../contexts/CartContext";
+
 import "./index.scss";
 
 function ProductDetailPage() {
@@ -118,6 +120,7 @@ function ProductDetailPage() {
           </div>
         </div>
       </div>
+
     </div>
   );
 }

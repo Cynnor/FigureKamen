@@ -3,6 +3,101 @@ import { heiseiRiders, reiwaRiders, showaRiders } from "../../data/products";
 import { useCart } from "../../context/CartContext";
 import "./index.scss";
 
+const categories = [
+  {
+    to: "/collections",
+    img: "heisei.jpg",
+    title: "Heisei Rider",
+    desc: "Khám phá ngay",
+    alt: "Heisei Riders",
+  },
+  {
+    to: "/collections",
+    img: "neo-heisei.jpg",
+    title: "Neo-Heisei Rider",
+    desc: "Khám phá ngay",
+    alt: "Neo Heisei Riders",
+  },
+];
+
+const featuredProducts = [
+  {
+    to: "/collections",
+    img: "heisei-full/1.Kyuga/full_body.jpg",
+    name: "Kamen Rider Kuuga",
+    badge: "Heisei",
+    alt: "Kuuga Figure",
+  },
+  {
+    to: "/collections",
+    img: "heisei-full/2.Agito/full_body.jpg",
+    name: "Kamen Rider Agito",
+    badge: "Heisei",
+    alt: "Agito Figure",
+  },
+  {
+    to: "/collections",
+    img: "heisei-full/3.Ryuki/full_body.jpg",
+    name: "Kamen Rider Ryuki",
+    badge: "Heisei",
+    alt: "Ryuki Figure",
+  },
+  {
+    to: "/collections",
+    img: "heisei-full/4.Faiz/full_body.jpg",
+    name: "Kamen Rider Faiz",
+    badge: "Heisei",
+    alt: "Faiz Figure",
+  },
+  {
+    to: "/collections",
+    img: "heisei-full/5.Blade/full_body.jpg",
+    name: "Kamen Rider Blade",
+    badge: "Heisei",
+    alt: "Blade Figure",
+  },
+  {
+    to: "/collections",
+    img: "heisei-full/6.Hibiki/full_body.jpg",
+    name: "Kamen Rider Hibiki",
+    badge: "Heisei",
+    alt: "Hibiki Figure",
+  },
+  {
+    to: "/collections",
+    img: "heisei-full/7.Kabuto/full_body.jpg",
+    name: "Kamen Rider Kabuto",
+    badge: "Heisei",
+    alt: "Kabuto Figure",
+  },
+  {
+    to: "/collections",
+    img: "heisei-full/8.Deno/full_body.jpg",
+    name: "Kamen Rider Den-O",
+    badge: "Heisei",
+    alt: "Den-O Figure",
+  },
+  {
+    to: "/collections",
+    img: "heisei-full/9.Kiva/full_body.jpg",
+    name: "Kamen Rider Kiva",
+    badge: "Heisei",
+    alt: "Kiva Figure",
+  },
+  {
+    to: "/collections",
+    img: "heisei-full/10.Decade/full_body.jpg",
+    name: "Kamen Rider Decade",
+    badge: "Heisei",
+    alt: "Decade Figure",
+  },
+];
+
+function getRandomProducts(arr, count) {
+  const shuffled = arr.slice().sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
+}
+
 function HomePage() {
   // Hiển thị 6 sản phẩm nổi bật từ cả 3 kỷ nguyên
   const featuredProducts = [
@@ -205,6 +300,7 @@ function HomePage() {
               <div className="category-arrow">→</div>
             </Link>
           </div>
+
         </div>
       </section>
 
