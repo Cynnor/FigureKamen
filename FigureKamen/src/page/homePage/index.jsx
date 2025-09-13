@@ -1,10 +1,5 @@
 import { Link } from "react-router-dom";
-import {
-  heiseiRiders,
-  reiwaRiders,
-  showaRiders,
-  allProducts,
-} from "../../data/products";
+import { heiseiRiders, reiwaRiders, showaRiders } from "../../data/products";
 import { useCart } from "../../context/CartContext";
 import "./index.scss";
 
