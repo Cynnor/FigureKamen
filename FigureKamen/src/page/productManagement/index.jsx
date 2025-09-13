@@ -1,5 +1,5 @@
 import "./index.scss";
-import SiteBar from "../../component/siteBar";
+import SiteBar from "../../components/siteBar";
 import { Button, Form, Select, Table, Dropdown, Modal } from "antd";
 import { EllipsisOutlined } from "@ant-design/icons";
 import { useEffect, useState } from "react";
